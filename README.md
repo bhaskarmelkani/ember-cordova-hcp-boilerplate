@@ -51,3 +51,36 @@ Specify what it takes to deploy your app.
   * [ember inspector for chrome](https://chrome.google.com/webstore/detail/ember-inspector/bmdblncegkenkacieihfhpjfppoconhi)
   * [ember inspector for firefox](https://addons.mozilla.org/en-US/firefox/addon/ember-inspector/)
 
+## Added support:-
+
+- [Cordova](https://github.com/poetic/ember-cli-cordova)
+    
+- [Crosswalk](https://github.com/crosswalk-project/cordova-plugin-crosswalk-webview)
+- [Hot Code Push](https://github.com/nordnet/cordova-hot-code-push)
+- [Hot Code Push Cli](https://github.com/nordnet/cordova-hot-code-push-cli)
+
+
+1. 	```ember install ember-cli-cordova```
+2. 	```cordova plugin add cordova-plugin-crosswalk-webview```
+    
+2.    Edit config/environment.js ,
+    
+3.    Change `locatonType` to `defaultLocationType`.
+       [#Reference](https://github.com/poetic/ember-cli-cordova/blob/master/docs/getting-started.md#developing-the-app)
+    
+ 4.   ```ember generate cordova-init com.bhaskarmelkani.ember_cordova_hcp_boilerplate```
+    
+    
+5. ```ember cordova:prepare```
+6. ```cd cordova/```
+7. ```cordova plugin add cordova-hot-code-push-plugin```
+8. ```sudo npm install -g cordova-hot-code-push-cli```
+9.  Added following code snippt in cordova/cofig.xml, inside ``widget`` tag.
+```
+<chcp>
+  <config-file url="https://test.company_server.com/mobile/www/chcp.json"/>
+</chcp>
+```
+10. ```cordova-hcp init```
+11. Fill in details.
+12. [Build and deploy the code to S3](https://github.com/nordnet/cordova-hot-code-push-cli#normal-workflow-scheme)
