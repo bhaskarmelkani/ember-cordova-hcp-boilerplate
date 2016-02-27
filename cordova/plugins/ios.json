@@ -1,0 +1,18 @@
+{
+    "prepare_queue": {
+        "installed": [],
+        "uninstalled": []
+    },
+    "config_munge": {
+        "files": {}
+    },
+    "installed_plugins": {
+        "cordova-hot-code-push-plugin": {
+            "PACKAGE_NAME": "com.bhaskarmelkani.ember_cordova_hcp_boilerplate"
+        },
+        "cordova-plugin-whitelist": {
+            "PACKAGE_NAME": "com.bhaskarmelkani.ember_cordova_hcp_boilerplate"
+        }
+    },
+    "dependent_plugins": {}
+}

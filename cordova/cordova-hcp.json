@@ -1,0 +1,9 @@
+{
+  "name": "ember-cordova-hcp-boilerplate",
+  "s3bucket": "s3-bucket-name",
+  "s3region": "us-east-1",
+  "ios_identifier": "",
+  "android_identifier": "",
+  "update": "resume",
+  "content_url": "https://s3.amazonaws.com/s3-bucket-name"
+}
